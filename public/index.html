@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weekly Timetable</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="timetable-container">
+    <header>
+      <h1>Weekly Timetable</h1>
+      <p class="term-info">Term: 5 Feb 2025 – 30 Jun 2025</p>
+    </header>
+    <table class="timetable">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Row 1: 08:10–10:00 -->
+        <tr>
+          <td>08:10–10:00</td>
+          <td class="ebus1514 fixed" title="08:10–10:00">
+            <span class="session-dot lecture"></span>
+            <strong>EBUS1514</strong><br>
+            Lecture 1<br>
+            Group A<br>
+            <span class="venue modular-hall">Modular Lecture Hall</span>
+            <br><span class="duration">Duration: 1h50</span>
+          </td>
+          <td class="no-class clickable" data-day="Tuesday" data-time="08:10–10:00">–</td>
+          <td class="eacc1614 fixed" title="08:10–10:00">
+            <span class="session-dot lecture"></span>
+            <strong>EACC1614</strong><br>
+            Lecture 3<br>
+            Group ABCD<br>
+            <span class="venue modular-hall">Modular Lecture Hall</span>
+            <br><span class="duration">Duration: 1h50</span>
+          </td>
+          <td class="no-class clickable" data-day="Thursday" data-time="08:10–10:00">–</td>
+          <td class="no-class clickable" data-day="Friday" data-time="08:10–10:00">–</td>
+        </tr>
+
+        <!-- Row 2: 09:10–11:00 -->
+        <tr>
+          <td>09:10–11:00</td>
+          <td class="no-class clickable" data-day="Monday" data-time="09:10–11:00">–</td>
+          <td class="no-class clickable" data-day="Tuesday" data-time="09:10–11:00">–</td>
+          <td class="no-class clickable" data-day="Wednesday" data-time="09:10–11:00">–</td>
+          <td class="ebus1514 fixed" title="09:10–11:00">
+            <span class="session-dot lecture"></span>
+            <strong>EBUS1514</strong><br>
+            Lecture 2<br>
+            Group G<br>
+            <span class="venue online">Online</span>
+            <br><span class="duration">Duration: 1h50</span>
+          </td>
+          <td class="no-class clickable" data-day="Friday" data-time="09:10–11:00">–</td>
+        </tr>
+
+        <!-- Row 3: 12:10–13:00 -->
+        <tr>
+          <td>12:10–13:00</td>
+          <td class="eacc1614 fixed" title="12:10–13:00">
+            <span class="session-dot lecture"></span>
+            <strong>EACC1614</strong><br>
+            Lecture 1<br>
+            Group BC<br>
+            <span class="venue modular-hall">Modular Lecture Hall</span>
+            <br><span class="duration">Duration: 50 min</span>
+          </td>
+          <td class="no-class clickable" data-day="Tuesday" data-time="12:10–13:00">–</td>
+          <td class="no-class clickable" data-day="Wednesday" data-time="12:10–13:00">–</td>
+          <td class="no-class clickable" data-day="Thursday" data-time="12:10–13:00">–</td>
+          <td class="no-class clickable" data-day="Friday" data-time="12:10–13:00">–</td>
+        </tr>
+
+        <!-- Row 4: 12:10–14:00 -->
+        <tr>
+          <td>12:10–14:00</td>
+          <td class="no-class clickable" data-day="Monday" data-time="12:10–14:00">–</td>
+          <td class="no-class clickable" data-day="Tuesday" data-time="12:10–14:00">–</td>
+          <td class="no-class clickable" data-day="Wednesday" data-time="12:10–14:00">–</td>
+          <td class="no-class clickable" data-day="Thursday" data-time="12:10–14:00">–</td>
+          <td class="ebus1514 fixed" title="12:10–14:00">
+            <span class="session-dot lecture"></span>
+            <strong>EBUS1514</strong><br>
+            Lecture 3<br>
+            Group A<br>
+            <span class="venue physics-116">Physics 116</span>
+            <br><span class="duration">Duration: 1h50</span>
+          </td>
+        </tr>
+
+        <!-- Row 5: 14:10–15:00 -->
+        <tr>
+          <td>14:10–15:00</td>
+          <td class="no-class clickable" data-day="Monday" data-time="14:10–15:00">–</td>
+          <td class="eacc1614 fixed" title="14:10–15:00">
+            <span class="session-dot tutorial"></span>
+            <strong>EACC1614</strong><br>
+            Tutorial 1<br>
+            Group G<br>
+            <span class="venue genmin-lectorium">Genmin Lectorium F</span>
+            <br><span class="duration">Duration: 50 min</span>
+          </td>
+          <td class="eecf1614 fixed" title="14:10–15:00">
+            <span class="session-dot tutorial"></span>
+            <strong>EECF1614</strong><br>
+            Tutorial 1<br>
+            Group A<br>
+            <span class="venue online">Online</span>
+            <br><span class="duration">Duration: 50 min</span>
+          </td>
+          <td class="no-class clickable" data-day="Thursday" data-time="14:10–15:00">–</td>
+          <td class="no-class clickable" data-day="Friday" data-time="14:10–15:00">–</td>
+        </tr>
+
+        <!-- Row 6: 15:10–16:00 -->
+        <tr>
+          <td>15:10–16:00</td>
+          <td class="no-class clickable" data-day="Monday" data-time="15:10–16:00">–</td>
+          <td class="eacc1614 fixed" title="15:10–16:00">
+            <span class="session-dot lecture"></span>
+            <strong>EACC1614</strong><br>
+            Lecture 2<br>
+            Group B<br>
+            <span class="venue main-building">Main Building West Block 201</span>
+            <br><span class="duration">Duration: 50 min</span>
+          </td>
+          <td class="no-class clickable" data-day="Wednesday" data-time="15:10–16:00">–</td>
+          <td class="no-class clickable" data-day="Thursday" data-time="15:10–16:00">–</td>
+          <td class="no-class clickable" data-day="Friday" data-time="15:10–16:00">–</td>
+        </tr>
+
+        <!-- Row 7: 17:10–19:00 -->
+        <tr>
+          <td>17:10–19:00</td>
+          <td class="no-class clickable" data-day="Monday" data-time="17:10–19:00">–</td>
+          <td class="eecf1614 fixed" title="17:10–19:00">
+            <span class="session-dot lecture"></span>
+            <strong>EECF1614</strong><br>
+            Lecture 1<br>
+            Group A1<br>
+            <span class="venue modular-room">Modular Lecture Room A1</span>
+            <br><span class="duration">Duration: 1h50</span>
+          </td>
+          <td class="no-class clickable" data-day="Wednesday" data-time="17:10–19:00">–</td>
+          <td class="no-class clickable" data-day="Thursday" data-time="17:10–19:00">–</td>
+          <td class="no-class clickable" data-day="Friday" data-time="17:10–19:00">–</td>
+        </tr>
+
+        <!-- Row 8: 18:10–20:00 -->
+        <tr>
+          <td>18:10–20:00</td>
+          <td class="cale1508 fixed" title="18:10–20:00">
+            <span class="session-dot lecture"></span>
+            <strong>CALE1508</strong><br>
+            Lecture 1<br>
+            Group A<br>
+            <span class="venue equitas-4">Equitas 4</span>
+            <br><span class="duration">Duration: 1h50</span>
+          </td>
+          <td class="no-class clickable" data-day="Tuesday" data-time="18:10–20:00">–</td>
+          <td class="no-class clickable" data-day="Wednesday" data-time="18:10–20:00">–</td>
+          <td class="no-class clickable" data-day="Thursday" data-time="18:10–20:00">–</td>
+          <td class="no-class clickable" data-day="Friday" data-time="18:10–20:00">–</td>
+        </tr>
+      </tbody>
+    </table>
+    <footer>
+      <p class="footer-note">Timetable provided as per the official schedule. Hover over sessions for details.</p>
+    </footer>
+
+    <!-- Modal for joining available classes -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <h2>Available Classes</h2>
+        <div id="class-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

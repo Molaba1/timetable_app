@@ -1,0 +1,16 @@
+{
+  "name": "interactive-timetable",
+  "version": "1.0.0",
+  "description": "Interactive Timetable Webapp with Fixed Blocks and Joinable Classes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "sqlite3": "^5.1.7"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
